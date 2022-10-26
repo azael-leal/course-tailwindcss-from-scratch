@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscribe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-zinc-700">
+        <!-- Card -->
+        <div class="rounded-lg bg-zinc-800 p-2">
+            <!-- Content -->
+            <div class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col md:flex-row gap-3">
+                <!-- Image -->
+                <img class="rounded-lg hover:scale-[1.02] h-60 transition-all" src="image.jpg" alt="Image">
+
+                <!-- Text -->
+                <div class="flex flex-col items-center justify-between md:justify-evenly gap-3 p-3">
+                    <p class="text-white font-medium text-center ">
+                        Get diet and fitness tips in your inbox
+                    </p>
+
+                    <p class="text-white text-xs text-center">
+                        Eat better and exercise better. Sign up for the Diet&Fitness newsletter
+                    </p>
+
+                    <input
+                        class="bg-zinc-800 rounded-md w-full text-xs py-1 px-4 placeholder:text-xs placeholder:text-center border border-zinc-600 text-white focus:ring-zinc-600 focus:outline-none"
+                        type="text" placeholder="Enter your email address">
+
+                    <button
+                        class="bg-lime-500 w-full p-1 rounded-md active:bg-lime-600 hover:bg-lime-500/90 transition-all">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

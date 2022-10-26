@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-rose-100 p-5">
+        <!-- Modal container -->
+        <div class="relative bg-white grid grid-cols-1 md:grid-cols-2 rounded-lg shadow-2xl overflow-hidden max-w-xl">
+            <!-- Close Modal -->
+            <svg class="absolute top-2 right-2 w-7 h-7 p-1 hover:shadow hover:scale-105 hover:bg-gray-300 bg-gray-200 rounded-full"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+
+            <!-- Login -->
+            <div class="grid col-span-1 bg-white items-center justify-center p-5 gap-5">
+                <!-- Title -->
+                <p class="text-3xl font-bold">Log In</p>
+
+                <!-- Log In Information -->
+                <p class="text-gray-400 text-xs">
+                    Log in to your account to upload or download pictures, videos or music.
+                </p>
+
+                <!-- Email -->
+                <input class="w-full p-3 ring-1 ring-gray-400 focus:outline-none rounded-lg" type="text"
+                    placeholder="Enter yout email address">
+
+                <!-- Forgot Password and Next Button -->
+                <div class="flex flex-col items-center justify-between gap-5 md:flex-row">
+                    <!-- Forgot password -->
+                    <a class="block text-cyan-800 hover:underline text-xs text-center flex-1" href="#">Forgot
+                        password</a>
+
+                    <!-- Next Button -->
+                    <button
+                        class="w-full flex-1 bg-cyan-800 hover:bg-cyan-700 p-5 rounded-lg text-white hover:-translate-y-1 hover:shadow-lg transition-all">
+                        Next &#8594;
+                    </button>
+                </div>
+
+                <div class="h-[1px] w-full bg-gray-400 my-5"></div>
+
+                <!-- Log In with a Social Media account -->
+                <p class="text-xs text-gray-400 text-center">or log in with</p>
+
+                <!-- Facebook Button -->
+                <button
+                    class="flex items-center justify-center ring-1 ring-gray-400 w-full p-2 gap-2 hover:-translate-y-1 hover:shadow-lg transition-all">
+                    <img class="w-8 h-8" src="images/facebook.png" alt="Facebook">
+                    Facebook
+                </button>
+
+                <!-- Google Button -->
+                <button
+                    class="flex items-center justify-center ring-1 ring-gray-400 w-full p-2 gap-2 hover:-translate-y-1 hover:shadow-lg transition-all">
+                    <img class="w-8 h-8" src="images/google.png" alt="Google">
+                    Google
+                </button>
+            </div>
+
+            <!-- Img -->
+            <div class="hidden col-span-1 md:grid">
+                <img class="object-cover w-full h-full" src="images/image.jpg" alt="Image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen bg-gray-200 flex items-center justify-center p-5">
+        <!-- Container -->
+        <div class="bg-white rounded-xl shadow-2xl p-5">
+            <!-- Content -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-5">
+                <!-- Image -->
+                <img class="hover:scale-105 w-60 transition-transform" src="images/headphone.png" alt="Headphones">
+
+                <!-- Description -->
+                <div class="flex flex-col items-center justify-center gap-2">
+                    <!-- Shipping -->
+                    <span class="bg-black rounded-2xl text-white py-1 px-4">Free Shiping</span>
+
+                    <!-- Product name -->
+                    <p class="text-lg text-center">Razer Kraken Kitty Edt Gaming Headset Quartz</p>
+
+                    <!-- Price -->
+                    <p class="line-through text-sm text-center">$799</p>
+
+                    <!-- Price with discount -->
+                    <p class="text-5xl font-bold text-center">$599</p>
+
+                    <!-- Offer valid until -->
+                    <p class="text-gray-400 text-xs text-center">
+                        This offer is valid until April 3rd or as long as stock lasts!
+                    </p>
+
+                    <!-- Add to card button -->
+                    <button
+                        class="bg-blue-600 p-4 rounded-md w-full text-white shadow-2xl hover:scale-[1.02] transition-all">
+                        Add to card
+                    </button>
+
+                    <!-- Stock -->
+                    <div class="flex items-center justify-start text-start gap-2">
+                        <div class="w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
+                        <p class="text-xs">50+ pcs. in stock</p>
+                    </div>
+
+                    <!-- Add to cart button -->
+                    <button
+                        class="w-full border border-gray-400 p-2 rounded-md flex items-center justify-center gap-2 hover:scale-[1.02] transition-all">
+                        <img class="w-8 h-8" src="images/weight.png" alt="weight">
+                        Add to card
+                    </button>
+
+                    <!-- Add to wish list button -->
+                    <button
+                        class="w-full border border-gray-400 p-2 rounded-md flex items-center justify-center gap-2 hover:scale-[1.02] transition-all">
+                        <img class="w-8 h-8" src="images/heart.png" alt="weight">
+                        Add to wishlist
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

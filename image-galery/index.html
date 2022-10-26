@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-cyan-100">
+        <!-- Container -->
+        <div class="bg-white rounded-lg shadow-xl flex flex-col p-5 gap-3">
+            <!-- Menu -->
+            <ul class="flex flex-col items-center justify-between md:flex-row md:justify-end gap-3">
+                <li class="group">
+                    <p class="group-hover:underline group-hover:underline-offset-8">Vector</p>
+                </li>
+
+                <li class="group">
+                    <p class="group-hover:underline group-hover:underline-offset-8">Ilustrations</p>
+                </li>
+
+                <li class="group">
+                    <p class="group-hover:underline group-hover:underline-offset-8">Images</p>
+                </li>
+
+                <li class="group">
+                    <p class="group-hover:underline group-hover:underline-offset-8">Icons</p>
+                </li>
+            </ul>
+
+
+            <!-- Search & Upload button -->
+            <div class="flex items-center justify-center md:flex-row md:justify-between">
+                <!-- Search button -->
+                <div class="flex items-center justify-between shadow-sm rounded-lg">
+                    <input class="p-2 focus:outline-none" type="text" placeholder="Search">
+
+                    <button>
+                        <svg class="w-8 text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="10" cy="10" r="7" />
+                            <line x1="21" y1="21" x2="15" y2="15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Upload button -->
+                <button
+                    class="bg-black text-white py-2 px-10 rounded-md hover:bg-white hover:text-black hover:ring-1 hover:ring-black">Upload</button>
+            </div>
+
+            <!-- Images -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+                <!-- Image 1 -->
+                <div class="relative group">
+                    <div
+                        class="w-full absolute group-hover:opacity-100 opacity-0 flex text-white bottom-0 left-0 z-10 p-2 bg-gray-900/50 items-center justify-between">
+                        <div>
+                            <p class="font-semibold">Abstract Painting</p>
+                            <p class="text-xs">245 likes - 35 shares</p>
+                        </div>
+
+                        <div>
+                            <img src="images/bookmark.svg" alt="bookmark" />
+                        </div>
+                    </div>
+
+                    <img src="images/image1.jpg" alt="Image 1">
+                </div>
+
+                <!-- Image 2 -->
+                <div class="relative group">
+                    <div
+                        class="w-full absolute group-hover:opacity-100 opacity-0 flex text-white bottom-0 left-0 z-10 p-2 bg-gray-900/50 items-center justify-between">
+                        <div>
+                            <p class="font-semibold">Abstract Painting</p>
+                            <p class="text-xs">245 likes - 35 shares</p>
+                        </div>
+
+                        <div>
+                            <img src="images/bookmark.svg" alt="bookmark" />
+                        </div>
+                    </div>
+
+                    <img src="images/image2.jpg" alt="Image 2">
+                </div>
+
+                <!-- Image 3 -->
+                <div class="relative group">
+                    <div
+                        class="w-full absolute group-hover:opacity-100 opacity-0 flex text-white bottom-0 left-0 z-10 p-2 bg-gray-900/50 items-center justify-between">
+                        <div>
+                            <p class="font-semibold">Abstract Painting</p>
+                            <p class="text-xs">245 likes - 35 shares</p>
+                        </div>
+
+                        <div>
+                            <img src="images/bookmark.svg" alt="bookmark" />
+                        </div>
+                    </div>
+
+                    <img src="images/image3.jpg" alt="Image 3">
+                </div>
+
+                <!-- Image 4 -->
+                <div class="relative group">
+                    <div
+                        class="w-full absolute group-hover:opacity-100 opacity-0 flex text-white bottom-0 left-0 z-10 p-2 bg-gray-900/50 items-center justify-between">
+                        <div>
+                            <p class="font-semibold">Abstract Painting</p>
+                            <p class="text-xs">245 likes - 35 shares</p>
+                        </div>
+
+                        <div>
+                            <img src="images/bookmark.svg" alt="bookmark" />
+                        </div>
+                    </div>
+
+                    <img src="images/image4.jpg" alt="Image 4">
+                </div>
+
+                <!-- Image 5 -->
+                <div class="relative group">
+                    <div
+                        class="w-full absolute group-hover:opacity-100 opacity-0 flex text-white bottom-0 left-0 z-10 p-2 bg-gray-900/50 items-center justify-between">
+                        <div>
+                            <p class="font-semibold">Abstract Painting</p>
+                            <p class="text-xs">245 likes - 35 shares</p>
+                        </div>
+
+                        <div>
+                            <img src="images/bookmark.svg" alt="bookmark" />
+                        </div>
+                    </div>
+
+                    <img src="images/image5.jpg" alt="Image 5">
+                </div>
+
+                <!-- Image 6 -->
+                <div class="relative group">
+                    <div
+                        class="w-full absolute group-hover:opacity-100 opacity-0 flex text-white bottom-0 left-0 z-10 p-2 bg-gray-900/50 items-center justify-between">
+                        <div>
+                            <p class="font-semibold">Abstract Painting</p>
+                            <p class="text-xs">245 likes - 35 shares</p>
+                        </div>
+
+                        <div>
+                            <img src="images/bookmark.svg" alt="bookmark" />
+                        </div>
+                    </div>
+
+                    <img src="images/image6.jpg" alt="Image 6">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
